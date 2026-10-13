@@ -1,0 +1,20 @@
+[
+{
+  "directory": "C:/Work/battlecode/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/bot.dir/includes_CXX.rsp -g -std=c++20 -msimd128 -fwasm-exceptions -mllvm -wasm-use-legacy-eh=false -o CMakeFiles\\bot.dir\\c_\\Work\\battlecode\\bots\\starter-cpp\\src\\bot.cpp.obj -c c:\\Work\\battlecode\\bots\\starter-cpp\\src\\bot.cpp",
+  "file": "c:/Work/battlecode/bots/starter-cpp/src/bot.cpp",
+  "output": "CMakeFiles/bot.dir/c_/Work/battlecode/bots/starter-cpp/src/bot.cpp.obj"
+},
+{
+  "directory": "C:/Work/battlecode/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/bot.dir/includes_CXX.rsp -g -std=c++20 -msimd128 -fwasm-exceptions -mllvm -wasm-use-legacy-eh=false -o CMakeFiles\\bot.dir\\c_\\Work\\battlecode\\bots\\starter-cpp\\src\\draft.cpp.obj -c c:\\Work\\battlecode\\bots\\starter-cpp\\src\\draft.cpp",
+  "file": "c:/Work/battlecode/bots/starter-cpp/src/draft.cpp",
+  "output": "CMakeFiles/bot.dir/c_/Work/battlecode/bots/starter-cpp/src/draft.cpp.obj"
+},
+{
+  "directory": "C:/Work/battlecode/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/bot.dir/includes_CXX.rsp -g -std=c++20 -msimd128 -fwasm-exceptions -mllvm -wasm-use-legacy-eh=false -o CMakeFiles\\bot.dir\\c_\\Work\\battlecode\\bots\\starter-cpp\\src\\main.cpp.obj -c c:\\Work\\battlecode\\bots\\starter-cpp\\src\\main.cpp",
+  "file": "c:/Work/battlecode/bots/starter-cpp/src/main.cpp",
+  "output": "CMakeFiles/bot.dir/c_/Work/battlecode/bots/starter-cpp/src/main.cpp.obj"
+}
+]

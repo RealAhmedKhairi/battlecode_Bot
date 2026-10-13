@@ -1,0 +1,1 @@
+-Ic:/Work/battlecode/sdk/cpp/cpp -isystem "/share/wasi-sysroot/include/wasm32-wasip1/eh/c++/v1"

@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\bot.dir/objects.a
+C:\msys64\mingw64\bin\ar.exe qc CMakeFiles\bot.dir/objects.a @CMakeFiles\bot.dir\objects1.rsp
+C:\msys64\mingw64\bin\g++.exe -g -fwasm-exceptions -mllvm -wasm-use-legacy-eh=false -L/share/wasi-sysroot/lib/wasm32-wasip1/eh -lunwind -Wl,--whole-archive CMakeFiles\bot.dir/objects.a -Wl,--no-whole-archive -o bot.wasm -Wl,--out-implib,libbot.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\bot.dir\linkLibs.rsp

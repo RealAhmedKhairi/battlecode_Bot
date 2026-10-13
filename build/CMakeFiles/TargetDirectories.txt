@@ -1,0 +1,3 @@
+C:/Work/battlecode/build/CMakeFiles/bot.dir
+C:/Work/battlecode/build/CMakeFiles/edit_cache.dir
+C:/Work/battlecode/build/CMakeFiles/rebuild_cache.dir
