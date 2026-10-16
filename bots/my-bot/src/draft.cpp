@@ -63,7 +63,9 @@ void write_draft_memory() {
         }
         buf[16 + gi * 2]     = static_cast<uint8_t>(best_a);
         buf[16 + gi * 2 + 1] = static_cast<uint8_t>(std::min(best_ad, 255));
-        gd.push_back({gi, sd, best_a, best_ad});
+        if (groups[gi].gem_value() < 150) {
+            gd.push_back({gi, sd, best_a, best_ad});
+        }
     }
 
     // Sort by distance to ally spawn
@@ -93,15 +95,15 @@ void play_draft() {
     }
 
     constexpr std::array<cambc::champion_draft, 11> preference{
-        cambc::champion_draft::vesper_vale,      // gold bonus + strong basics
-        cambc::champion_draft::willow,           // team healer! massive sustain for camps and fights
-        cambc::champion_draft::cassi_and_issac,  // two champions for one pick! Extra farming body
-        cambc::champion_draft::varg,             // splash + shield
-        cambc::champion_draft::vendetta,         // kill resets, great farmer
-        cambc::champion_draft::ren,              // stun + dash
-        cambc::champion_draft::ryth,             // tanky area stun
+        cambc::champion_draft::cassi_and_issac,  // two champions for one pick! Always outnumber opponent
+        cambc::champion_draft::varg,             // splash basic attacks + shield + reset
+        cambc::champion_draft::vendetta,         // kill resets cooldowns, fastest farmer in game
+        cambc::champion_draft::ryth,             // tanky area stun + reset + health adds strength
+        cambc::champion_draft::marcella,         // stun immune frontline melee
+        cambc::champion_draft::ren,              // stun + dash + retaliation
+        cambc::champion_draft::vesper_vale,      // gold bonus + strong basics + dash + reset
+        cambc::champion_draft::willow,           // team healer + reset
         cambc::champion_draft::stellar,          // reliable spell damage
-        cambc::champion_draft::marcella,         // stun immune frontline
         cambc::champion_draft::tavi,             // field shop + big stun
         cambc::champion_draft::prism,            // gem scaling
     };
